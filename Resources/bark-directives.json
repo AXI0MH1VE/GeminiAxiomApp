@@ -1,0 +1,30 @@
+{
+  "directives": [
+    {
+      "id": "protocol-definition-trading",
+      "type": "PROTOCOL_DEFINITION",
+      "description": "Trading protocol definition with BARK governance",
+      "dimensions": ["technical", "regulatory", "economic"],
+      "constraints": {
+        "max_order_size": "1000000",
+        "min_order_size": "0.0001",
+        "rate_limits": true
+      }
+    },
+    {
+      "id": "enforcement-order-compliance",
+      "type": "ENFORCEMENT_ORDER",
+      "description": "Regulatory compliance enforcement order",
+      "dimensions": ["regulatory"],
+      "target": "all_trading_operations",
+      "evidence": ["regulation_xyz", "audit_2025"]
+    }
+  ],
+  "operators": [
+    {
+      "id": "axiomhive:operator:alexis_m_adams",
+      "name": "AxiomHive Operator",
+      "permissions": ["trading", "auditing", "governance"]
+    }
+  ]
+}

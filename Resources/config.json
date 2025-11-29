@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "GeminiAxiomApp",
+    "version": "1.0",
+    "organization": "AxiomHive",
+    "author": "Alexis M Adams"
+  },
+  "security": {
+    "certificatePinning": true,
+    "sslValidation": true,
+    "keychainGroup": "group.com.axiomhive"
+  },
+  "bark": {
+    "operator": "axiomhive:operator:alexis_m_adams",
+    "dimensions": [
+      "technical",
+      "regulatory",
+      "ontological",
+      "epistemological",
+      "economic"
+    ]
+  },
+  "endpoints": {
+    "geminiSandbox": "https://api.sandbox.gemini.com",
+    "geminiProduction": "https://api.gemini.com",
+    "auditSync": "https://audit.axiomhive.io"
+  }
+}
